@@ -1,0 +1,144 @@
+body{
+    font-family: 'Space Mono', 'monospace';
+    background-color: hsl(185, 41%, 84%);
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(1fr,1fr,1fr));
+    row-gap: 20px;
+}
+.result{
+    margin-right: 1rem;
+}
+
+.intro{
+    justify-self: center;
+    align-self: center;
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin: 0.7rem 0;
+    width: max-content;
+}
+
+/* styling two divs under the main which are
+intro and content.
+*/
+.calculator{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    justify-self: center;
+    align-self: center;
+    margin-left:1rem;
+    
+}
+.bill{
+    background:url("images/icon-dollar.svg") no-repeat left 0.8rem center;
+}
+.people{
+    background:url("images/icon-person.svg") no-repeat left 0.8rem center;
+}
+input{
+    width: 16.5rem;
+    font-size: 1.5rem;
+    margin-top:0.4rem;
+    margin-bottom:1rem;
+    background-color: hsl(189, 41%, 97%);
+    border: None;
+    text-align:right;
+    color:hsl(183, 100%, 15%);
+    font-weight: 600;
+    display:inline;
+}
+input:hover{
+    border:None;
+}
+
+.input{
+    padding:1rem 0;
+    color:hsl(186, 14%, 43%);
+    font-size:10px;
+    font-weight:700;
+}
+.buttons{
+    display: grid;
+    gap:5px;
+    margin-top:0.5rem;
+    margin-bottom:2rem;
+    grid-template-columns: repeat(auto-fit,minmax(20px,130px));
+}
+button{
+    border:None;
+}
+.cstm-btn{
+    color:hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.tp-btn{
+    background-color: hsl(183, 100%, 15%);
+    color:white;
+    font-size: small;
+    font-weight:700;
+    padding:0.5rem 0;
+    border-radius: 5px;
+    border:None;
+    font-family: 'Space Mono', monospace;;
+}
+.tp-btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+.result{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding:1rem 1rem;
+    color:white;
+}
+.amt{
+    font-size: small;
+    font-weight: bold;
+    
+}
+.prsn{
+    font-size: smaller;
+    color:hsla(0, 0%, 100%, 0.774);
+}
+.amount-lbl,.total-lbl,.rslt-amt{
+    padding-top:1rem;
+}
+.rslt-amt{
+    display: grid;
+    justify-items: end;
+    color:hsl(172, 67%, 45%);
+    font-size: 2rem;
+}
+.reset{
+    display: grid;
+    grid-column: 1/-1;
+    height:min-content;
+    margin-top: 1rem;
+}
+@media screen and (min-width:770px){
+    input{
+        width:17rem;
+    }
+    .calculator{
+        margin:0 6rem 3rem 6rem;
+    }
+    .buttons{
+        grid-template-columns: repeat(auto-fit,minmax(20px,90px));
+    }
+    .result{
+        margin-right: 0rem;
+    }
+}
+
+
