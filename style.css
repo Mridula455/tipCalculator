@@ -45,7 +45,7 @@ intro and content.
     font-size: 1rem;
 }
 input{
-    width: 16.5rem;
+    width: 19rem;
     font-size: 1.5rem;
     margin-top:0.4rem;
     margin-bottom:1rem;
@@ -134,7 +134,7 @@ button{
     padding:1rem;
     font-size: 1rem;
     font-weight:700;
-    margin-top: 9rem;
+    margin-top: 3rem;
     border-radius: 5px;
     border:None;
     font-family: 'Space Mono', monospace;
