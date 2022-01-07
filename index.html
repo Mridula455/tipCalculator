@@ -21,20 +21,23 @@
     </div>
     <div class="calculator">
       <div class="content">
-        <div class="input">
+        <div id="#input">
           <label class="fnt-size">Bill</label><br>
-          <input class="bill" type = text><br>
+          <input class="input bill" type = text><br>
           <label class="fnt-size">Select Tip %</label>
           <div class="buttons">
-            <button class="tp-btn">5%</button>
-            <button class="tp-btn">10%</button>
-            <button class="tp-btn">15%</button>
-            <button class="tp-btn">25%</button>
-            <button class="tp-btn">50%</button>
-            <button class="cstm-btn">Custom</button>
+            <button class="btn tip">5%</button>
+            <button class="btn tip">10%</button>
+            <button class="btn tip btn-active">15%</button>
+            <button class="btn tip">25%</button>
+            <button class="btn tip">50%</button>
+            <input class="input-cstm" id="cstm-input"placeholder="Custom"></input>
           </div>
-          <label class="fnt-size">Number of People</label><br>
-          <input class="people" type="text">
+          <div >
+            <label class="fnt-size">Number of People</label>
+            <p class="error-msg">Can't be zero</p><br>
+          </div>
+          <input class="people input" id="ppl-input" type="text">
         </div>
 
         <div class="result">
@@ -44,7 +47,7 @@
             <label class="prsn">/ person</label>
           </div>
           <div class="amount">
-            <label class="rslt-amt"></label>
+            <label class="rslt-amt results"></label>
           </div>
 
             <div class="total-lbl">
@@ -52,7 +55,7 @@
               <label class="prsn">/ person</label>
             </div>
             <div class="amount-total">
-              <label class="rslt-amt"></label>
+              <label class="rslt-amt total"></label>
             </div>
           <button class="reset">RESET</button>
         </div>
@@ -64,5 +67,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/mridula-malhotra-774b031b2/">Mridula Malhotra</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
